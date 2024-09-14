@@ -1,0 +1,167 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Georgia', serif;
+    background-color: #f9f3f2;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background: #ffebf2;
+    color: #d45d79;
+    text-align: center;
+    padding: 2rem;
+}
+
+header h1 {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+}
+
+header p {
+    font-size: 1.25rem;
+}
+
+main {
+    padding: 2rem;
+}
+
+.content {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.hero-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 1.5rem;
+    opacity: 0;
+    animation: fadeIn 2s forwards;
+}
+
+h2 {
+    font-size: 2rem;
+    color: #d45d79;
+    margin-bottom: 1rem;
+    opacity: 0;
+    animation: fadeIn 2s 0.5s forwards;
+}
+
+p {
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+    opacity: 0;
+    animation: fadeIn 2s 1s forwards;
+}
+
+.button, button {
+    background-color: #d45d79;
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 1rem;
+    text-decoration: none; /* Asegúrate de que los botones se vean consistentes */
+}
+
+.button:hover, button:hover {
+    background-color: #b43f62;
+}
+
+
+footer {
+    background: #ffebf2;
+    color: #d45d79;
+    text-align: center;
+    padding: 1rem;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+/* Estilos generales, que ya tienes definidos */
+
+/* Estilos para pantallas pequeñas (móviles) */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 2.5rem;
+    }
+
+    header p {
+        font-size: 1rem;
+    }
+
+    .hero-image {
+        max-width: 100%;
+        height: auto;
+        margin-bottom: 1rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+    .button, button {
+        padding: 0.5rem 1rem;
+        font-size: 0.875rem;
+    }
+}
+
+/* Estilos para pantallas medianas (tabletas) */
+@media (min-width: 601px) and (max-width: 900px) {
+    header h1 {
+        font-size: 2.75rem;
+    }
+
+    header p {
+        font-size: 1.125rem;
+    }
+
+    .hero-image {
+        max-width: 100%;
+        height: auto;
+        margin-bottom: 1.25rem;
+    }
+
+    h2 {
+        font-size: 1.75rem;
+    }
+
+    p {
+        font-size: 1.05rem;
+    }
+
+    .button, button {
+        padding: 0.625rem 1.25rem;
+        font-size: 0.9rem;
+    }
+}
+
+/* Estilos para pantallas grandes (escritorios) */
+@media (min-width: 901px) {
+    /* Aquí puedes ajustar los estilos para pantallas grandes, si es necesario */
+}
